@@ -1,3 +1,4 @@
+import 'package:coffee/modules/Menu/menu.dart';
 import 'package:coffee/modules/Starting_Page/StartingPage.dart';
 import 'package:flutter/material.dart';
 
@@ -8,16 +9,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(fontFamily: 'Montez'),
-        home: const SafeArea(
-          child: Scaffold(
-            body: StartingPage(),
-          ),
-        ));
+    return const MaterialApp(
+        home: SafeArea(
+      child: Scaffold(
+        body: Menu(),
+      ),
+    ));
   }
 }

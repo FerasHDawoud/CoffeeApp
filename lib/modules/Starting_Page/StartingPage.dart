@@ -1,5 +1,6 @@
 // ignore_for_file:  file_names
 import 'package:coffee/utils/APP_COLORS.dart';
+import 'package:coffee/utils/TextTemplet.dart';
 import 'package:flutter/material.dart';
 
 class StartingPage extends StatelessWidget {
@@ -7,6 +8,8 @@ class StartingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var mediaQueryHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: APPCOLORS.secondaryColor,
       body: Container(
@@ -15,20 +18,48 @@ class StartingPage extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage("assets/images/background.png"),
             fit: BoxFit.cover,
+            opacity: 0.3,
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           // ignore: prefer_const_literals_to_create_immutables
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.15,
+              height: mediaQueryHeight * 0.08,
             ),
             const Text(
               "latte",
               style: TextStyle(
                   fontFamily: 'Montez',
                   color: APPCOLORS.primaryColor,
-                  fontSize: 90),
+                  fontSize: 96),
+            ),
+            Container(
+              width: double.infinity,
+              height: mediaQueryHeight * 0.55,
+              decoration: const BoxDecoration(
+                color: APPCOLORS.primaryColor,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(40.0),
+                  topLeft: Radius.circular(40.0),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    height: mediaQueryHeight * 0.18,
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/coffee main logo.png"),
+                      ),
+                    ),
+                  ),
+                  const TextTemplet(text_: "S I N C E  1 9 8 9", size_: 16),
+                ],
+              ),
             ),
           ],
         ),
