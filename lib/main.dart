@@ -1,4 +1,4 @@
-import 'package:coffee/modules/Menu/menu.dart';
+import 'package:coffee/modules/Item_Details/ItemDetails.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
         home: SafeArea(
       child: Scaffold(
-        body: Menu(),
+        body: ItemDetails(),
       ),
     ));
   }
