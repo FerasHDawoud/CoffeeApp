@@ -1,5 +1,4 @@
 import 'package:coffee/modules/Menu/menu.dart';
-import 'package:coffee/modules/Starting_Page/StartingPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

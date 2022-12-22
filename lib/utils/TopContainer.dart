@@ -44,7 +44,6 @@ class TopContainer extends StatelessWidget {
                     onPressed: onPressedLeftText,
                     child: TextTemplet(
                       text_: leftBottonText,
-                      size_: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -56,7 +55,6 @@ class TopContainer extends StatelessWidget {
                     onPressed: onPressedRighitText,
                     child: TextTemplet(
                       text_: rightBottonText,
-                      size_: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

@@ -12,7 +12,7 @@ class TextTemplet extends StatelessWidget {
   const TextTemplet(
       {super.key,
       required this.text_,
-      required this.size_,
+      this.size_ = 14,
       this.fontColor_ = APPCOLORS.secondaryColor,
       this.fontWeight = FontWeight.normal});
 
