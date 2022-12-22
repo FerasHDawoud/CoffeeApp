@@ -52,15 +52,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  fonts:
-    - family: Montez
-      fonts:
-        - asset: assets/fonts/Montez-Regular.ttf
-    - family: ligconsolata
-      fonts:
-        - asset: assets/fonts/ligconsolata-regular.ttf
-
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -71,6 +62,13 @@ flutter:
    - assets/images/
   #   - images/a_dot_ham.jpeg
 
+  fonts:
+    - family: Montez
+      fonts:
+        - asset: assets/fonts/Montez-Regular.ttf
+    - family: ligconsolata
+      fonts:
+        - asset: assets/fonts/ligconsolata-regular.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
