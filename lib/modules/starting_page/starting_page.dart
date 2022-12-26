@@ -1,9 +1,8 @@
-// ignore_for_file:  file_names
-import 'package:coffee/utils/APP_COLORS.dart';
-import 'package:coffee/utils/BackgroundImage.dart';
-import 'package:coffee/utils/ImportImage.dart';
-import 'package:coffee/utils/TextTemplet.dart';
+import 'package:coffee/utils/import_image.dart';
 import 'package:flutter/material.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/background_image.dart';
+import '../../utils/text_templet.dart';
 
 class StartingPage extends StatelessWidget {
   const StartingPage({super.key});
@@ -42,8 +41,8 @@ class StartingPage extends StatelessWidget {
               children: [
                 ImportImage(
                     imageName: "assets/images/coffee main logo.png",
-                    height_: mediaQueryHeight * 0.18,
-                    width_: double.infinity),
+                    height: mediaQueryHeight * 0.18,
+                    width: double.infinity),
                 const TextTemplet(text_: "S I N C E  1 9 8 9", size_: 16),
               ],
             ),

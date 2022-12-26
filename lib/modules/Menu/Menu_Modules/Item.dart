@@ -1,9 +1,8 @@
-// ignore_for_file: file_names
-
 import 'package:coffee/utils/APP_COLORS.dart';
-import 'package:coffee/utils/ImportImage.dart';
-import 'package:coffee/utils/TextTemplet.dart';
+import 'package:coffee/utils/import_image.dart';
 import 'package:flutter/cupertino.dart';
+
+import '../../../utils/text_templet.dart';
 
 class Item extends StatelessWidget {
   final String imageName;
@@ -21,14 +20,17 @@ class Item extends StatelessWidget {
       onTap: () {},
       child: Row(
         children: [
-          ImportImage(
-            imageName: imageName,
-            height_: 130,
-            width_: 130,
-            radius: 100,
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: ImportImage(
+              imageName: imageName,
+              height: 110,
+              width: 110,
+              radius: 100,
+            ),
           ),
           Container(
-            height: 56,
+            height: 50,
             width: MediaQuery.of(context).size.width * 0.6,
             decoration: const BoxDecoration(
                 color: APPCOLORS.primaryColor,
@@ -47,12 +49,12 @@ class Item extends StatelessWidget {
                     TextTemplet(
                       text_: itemName,
                       fontWeight: FontWeight.bold,
-                      size_: 20,
+                      size_: 18,
                     ),
                     TextTemplet(
                       text_: price,
                       fontWeight: FontWeight.bold,
-                      size_: 20,
+                      size_: 18,
                     ),
                   ],
                 ),

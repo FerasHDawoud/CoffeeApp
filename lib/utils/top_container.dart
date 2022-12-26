@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, prefer_typing_uninitialized_variables, must_be_immutable
+import 'package:coffee/utils/text_templet.dart';
 import 'package:flutter/material.dart';
 import 'APP_COLORS.dart';
-import 'TextTemplet.dart';
 
 class TopContainer extends StatelessWidget {
   final String titele;

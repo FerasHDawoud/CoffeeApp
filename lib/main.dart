@@ -1,5 +1,6 @@
-import 'package:coffee/modules/Item_Details/ItemDetails.dart';
 import 'package:flutter/material.dart';
+
+import 'modules/Order_Summary/order_summary.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        home: SafeArea(
-      child: Scaffold(
-        body: ItemDetails(),
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          body: OrderSummary(),
+        ),
       ),
-    ));
+    );
   }
 }
