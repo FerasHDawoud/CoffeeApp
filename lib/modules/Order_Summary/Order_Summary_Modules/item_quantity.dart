@@ -46,6 +46,8 @@ class ItemQuantity extends StatelessWidget {
                       text: "+",
                       onTop: () {
                         myProvider.incrementQuantity(cartIndex);
+                        myProvider.subTotal();
+                        myProvider.total_();
                       },
                     ),
                     SizedBox(
@@ -65,6 +67,8 @@ class ItemQuantity extends StatelessWidget {
                       onTop: () {
                         if (myProvider.cart[cartIndex].quantity > 0) {
                           myProvider.decrementQuantity(cartIndex);
+                          myProvider.subTotal();
+                          myProvider.total_();
                         }
                       },
                     ),

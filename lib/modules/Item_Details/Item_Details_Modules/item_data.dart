@@ -2,7 +2,7 @@ class ItemData {
   String image;
   String name;
   String details;
-  String price;
+  double price;
 
   ItemData({
     required this.image,
