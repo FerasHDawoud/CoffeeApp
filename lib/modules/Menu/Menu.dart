@@ -13,7 +13,7 @@ class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var items = ItemsList.items;
-
+    var myProvider = Provider.of<Cart>(context, listen: false);
     return SafeArea(
       child: BackgrounImage(
         child: Column(children: [
@@ -25,8 +25,8 @@ class Menu extends StatelessWidget {
             },
             rightBottonText: "View Order >\nSummary",
             onPressedRighitText: () {
-              Provider.of<Cart>(context, listen: false).subTotal();
-              Provider.of<Cart>(context, listen: false).total_();
+              myProvider.subTotal();
+              myProvider.total_();
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const OrderSummary()),
@@ -43,7 +43,7 @@ class Menu extends StatelessWidget {
                     return Item(
                       imageName: items[index].image,
                       itemName: items[index].name,
-                      price: items[index].price,
+                      price: "${items[index].price.toString()} \$",
                       itemIndex: index,
                     );
                   }),

@@ -59,23 +59,30 @@ class OrderSummary extends StatelessWidget {
                                   builder: (context, value, child) {
                                     return LineOfText(
                                         text: "Subtotal",
-                                        price: value.sum.toString());
+                                        price: "${value.sum.toString()} \$");
                                   },
                                 ),
                                 SizedBox(
                                     height: MediaQuery.of(context).size.height *
                                         0.01),
                                 const LineOfText(
-                                    text: "Delivery", price: "3 \$"),
+                                    text: "Delivery", price: "3.0 \$"),
                                 SizedBox(
                                     height: MediaQuery.of(context).size.height *
                                         0.01),
                                 const Divider(thickness: 2),
-                                LineOfText(
-                                  text: "Total",
-                                  price: myProvider.total.toString(),
-                                  size: 22,
+                                Consumer<Cart>(
+                                  builder: (context, value, child) {
+                                    return LineOfText(
+                                      text: "Total",
+                                      price: value.total.toString(),
+                                      size: 22,
+                                    );
+                                  },
                                 ),
+                                SizedBox(
+                                    height: MediaQuery.of(context).size.height *
+                                        0.025)
                               ],
                             ),
                             Expanded(

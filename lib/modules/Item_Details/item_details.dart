@@ -82,7 +82,8 @@ class ItemDetails extends StatelessWidget {
                                 fontColor_: APPCOLORS.primaryTextColor,
                               ),
                               TextTemplet(
-                                text_: ItemsList.items[itemNum].price,
+                                text_:
+                                    "${ItemsList.items[itemNum].price.toString()} \$",
                                 fontColor_: APPCOLORS.primaryTextColor,
                                 size_: 30,
                                 fontWeight: FontWeight.bold,
