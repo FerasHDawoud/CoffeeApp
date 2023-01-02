@@ -1,8 +1,7 @@
-// ignore_for_file: file_names, prefer_typing_uninitialized_variables, avoid_init_to_null, must_be_immutable
-
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables, avoid_init_to_null
 import 'package:flutter/material.dart';
 
-import 'APP_COLORS.dart';
+import 'app_colors.dart';
 
 class BackgrounImage extends StatelessWidget {
   var child;
