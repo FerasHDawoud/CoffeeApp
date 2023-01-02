@@ -1,6 +1,7 @@
+import 'package:coffee/modules/Item_Details/item_details.dart';
 import 'package:coffee/utils/APP_COLORS.dart';
 import 'package:coffee/utils/import_image.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import '../../../utils/text_templet.dart';
 
@@ -8,16 +9,28 @@ class Item extends StatelessWidget {
   final String imageName;
   final String itemName;
   final String price;
-  const Item(
-      {super.key,
-      required this.imageName,
-      required this.itemName,
-      required this.price});
+  final int itemIndex;
+
+  const Item({
+    super.key,
+    required this.imageName,
+    required this.itemName,
+    required this.price,
+    required this.itemIndex,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => ItemDetails(
+                    itemNum: itemIndex,
+                  )),
+        );
+      },
       child: Row(
         children: [
           Padding(
