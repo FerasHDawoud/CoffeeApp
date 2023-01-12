@@ -36,7 +36,7 @@ class Menu extends StatelessWidget {
           Expanded(
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.8,
-              width: double.infinity,
+              width: MediaQuery.of(context).size.width,
               child: SingleChildScrollView(
                 child: Column(
                   children: List.generate(9, (index) {
