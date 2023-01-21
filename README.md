@@ -1,7 +1,7 @@
 
 # Project Title and Description
 
-Developed a CoffeeStore mobile application with Flutter, created the App design utilizing modern
+Developed a CoffeeStore demo mobile application with Flutter, created the App design utilizing modern
 UX principles to achieve a delightful user experience & robust interface, and has been analyzed & organized app data to improve user experience, and facilitation use app’s data for developers, and for optimize workflow, and increasing efficiency I developed the App using OOP structure. CoffeeStore app allowing users to view menu and item details, and provides seamless payment gateway for efficient transactions.
 
 ## Related
