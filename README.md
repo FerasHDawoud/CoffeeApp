@@ -1,20 +1,14 @@
 
-# coffee
+# Project Title and Description
 
-A new Flutter project.
+Developed a CoffeeStore mobile application with Flutter, created the App design utilizing modern
+UX principles to achieve a delightful user experience & robust interface, and has been analyzed & organized app data to improve user experience, and facilitation use app’s data for developers, and for optimize workflow, and increasing efficiency I developed the App using OOP structure. CoffeeStore app allowing users to view menu and item details, and provides seamless payment gateway for efficient transactions.
 
-## Getting Started
+## Related
 
-This project is a starting point for a Flutter application.
+Design of project by "vishnudeep mr" on Figma Community, 
+[click here](https://www.figma.com/community/file/1015335394404105117). And I added set of improvements on design.
+Images from same design project with minor adjustments.
+## License
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# CoffeeApp
-Application for purchase and delivery coffee and pizza from cafeteria in hospital or university.
-
+[MIT](https://choosealicense.com/licenses/mit/)
